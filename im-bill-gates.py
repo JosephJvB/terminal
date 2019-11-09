@@ -12,7 +12,7 @@ class Main:
                 rel_path = os.path.join(d, f)
                 if os.path.isdir(rel_path):
                     self.main_loop(rel_path)
-                elif os.path.isfile(rel_path) and not f == "crabbify.py":
+                elif os.path.isfile(rel_path) and not f == "im-bill-gates.py":# make script file recognize self
                     self.rename(rel_path)
                 else: print("not file or dir?", rel_path)
         return
